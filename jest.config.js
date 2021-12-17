@@ -9,6 +9,6 @@ module.exports = {
   transform: {
     '^.+\\.(js)$': 'esbuild-jest',
     '^.+\\.(mjs)$': 'esbuild-jest',
-    '^.+\\.(vue)$': 'vue-jest'
+    '^.+\\.(vue)$': '@vue/vue3-jest'
   }
 }

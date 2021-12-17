@@ -7,6 +7,6 @@
   },
   "dependencies": {
     "druxt-site": "link:../../../packages/druxt-entity",
-    "nuxt": "latest"
+    "nuxt3": "latest"
   }
 }
