@@ -6305,15 +6305,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"druxt-blocks@^0.14.2, druxt-blocks@workspace:packages/blocks":
+"druxt-blocks@^0.14.3, druxt-blocks@workspace:packages/blocks":
   version: 0.0.0-use.local
   resolution: "druxt-blocks@workspace:packages/blocks"
   dependencies:
     axios: ^0.21.1
     drupal-jsonapi-params: ^1.1.12
-    druxt: ^0.14.0
-    druxt-entity: ^0.21.3
-    druxt-router: ^0.24.1
+    druxt: ^0.15.0
+    druxt-entity: ^0.21.4
+    druxt-router: ^0.24.2
     vue: ^2.6.14
     vuex: ^3.6.2
   dependenciesMeta:
@@ -6324,13 +6324,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"druxt-breadcrumb@^0.13.2, druxt-breadcrumb@workspace:packages/breadcrumb":
+"druxt-breadcrumb@^0.13.3, druxt-breadcrumb@workspace:packages/breadcrumb":
   version: 0.0.0-use.local
   resolution: "druxt-breadcrumb@workspace:packages/breadcrumb"
   dependencies:
-    druxt: ^0.14.0
-    druxt-blocks: ^0.14.2
-    druxt-router: ^0.24.1
+    druxt: ^0.15.0
+    druxt-blocks: ^0.14.3
+    druxt-router: ^0.24.2
     vue: ^2.6.14
     vuex: ^3.6.2
   dependenciesMeta:
@@ -6359,26 +6359,26 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"druxt-entity@^0.21.3, druxt-entity@workspace:packages/entity":
+"druxt-entity@^0.21.4, druxt-entity@workspace:packages/entity":
   version: 0.0.0-use.local
   resolution: "druxt-entity@workspace:packages/entity"
   dependencies:
     deepmerge: ^4.2.2
     drupal-jsonapi-params: ^1.2.2
-    druxt: ^0.14.0
-    druxt-router: ^0.24.1
-    druxt-schema: ^0.9.1
+    druxt: ^0.15.0
+    druxt-router: ^0.24.2
+    druxt-schema: ^0.9.2
   languageName: unknown
   linkType: soft
 
-"druxt-menu@^0.15.1, druxt-menu@workspace:packages/menu":
+"druxt-menu@^0.15.2, druxt-menu@workspace:packages/menu":
   version: 0.0.0-use.local
   resolution: "druxt-menu@workspace:packages/menu"
   dependencies:
     deepmerge: ^4.2.2
     drupal-jsonapi-params: ^1.1.12
-    druxt: ^0.14.0
-    druxt-blocks: ^0.14.2
+    druxt: ^0.15.0
+    druxt-blocks: ^0.14.3
     vue: ^2.6.14
     vuex: ^3.6.2
   dependenciesMeta:
@@ -6389,11 +6389,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"druxt-router@^0.24.1, druxt-router@workspace:packages/router":
+"druxt-router@^0.24.2, druxt-router@workspace:packages/router":
   version: 0.0.0-use.local
   resolution: "druxt-router@workspace:packages/router"
   dependencies:
-    druxt: ^0.14.0
+    druxt: ^0.15.0
     url-parse: ^1.4.7
     vue: ^2.6.14
     vuex: ^3.6.2
@@ -6405,13 +6405,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"druxt-schema@^0.9.1, druxt-schema@workspace:packages/schema":
+"druxt-schema@^0.9.2, druxt-schema@workspace:packages/schema":
   version: 0.0.0-use.local
   resolution: "druxt-schema@workspace:packages/schema"
   dependencies:
     consola: ^2.15.0
     drupal-jsonapi-params: ^1.2.2
-    druxt: ^0.14.0
+    druxt: ^0.15.0
     vue: ^2.6.14
     vuex: ^3.6.2
   dependenciesMeta:
@@ -6427,14 +6427,14 @@ __metadata:
   resolution: "druxt-site@workspace:packages/site"
   dependencies:
     drupal-jsonapi-params: ^1.2.2
-    druxt: ^0.14.0
-    druxt-blocks: ^0.14.2
-    druxt-breadcrumb: ^0.13.2
-    druxt-entity: ^0.21.3
-    druxt-menu: ^0.15.1
-    druxt-router: ^0.24.1
-    druxt-schema: ^0.9.1
-    druxt-views: ^0.16.2
+    druxt: ^0.15.0
+    druxt-blocks: ^0.14.3
+    druxt-breadcrumb: ^0.13.3
+    druxt-entity: ^0.21.4
+    druxt-menu: ^0.15.2
+    druxt-router: ^0.24.2
+    druxt-schema: ^0.9.2
+    druxt-views: ^0.17.0
     md5: ^2.2.1
     vue: ^2.6.14
     vuex: ^3.6.2
@@ -6457,17 +6457,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"druxt-views@^0.16.2, druxt-views@workspace:packages/views":
+"druxt-views@^0.17.0, druxt-views@workspace:packages/views":
   version: 0.0.0-use.local
   resolution: "druxt-views@workspace:packages/views"
   dependencies:
     axios: ^0.21.1
     deepmerge: ^4.2.2
     drupal-jsonapi-params: ^1.1.12
-    druxt: ^0.14.0
-    druxt-blocks: ^0.14.2
-    druxt-entity: ^0.21.3
-    druxt-router: ^0.24.1
+    druxt: ^0.15.0
+    druxt-blocks: ^0.14.3
+    druxt-entity: ^0.21.4
+    druxt-router: ^0.24.2
     md5: ^2.3.0
     vue: ^2.6.14
     vuex: ^3.6.2
@@ -6491,7 +6491,7 @@ __metadata:
     "@vue/test-utils": 1.3.0
     babel-core: 7.0.0-bridge.0
     bundlewatch: 0.3.2
-    esbuild: 0.12.15
+    esbuild: 0.14.8
     esbuild-jest: 0.5.0
     eslint: 7.32.0
     eslint-junit: 1.0.1
@@ -6511,7 +6511,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"druxt@^0.14.0, druxt@workspace:packages/druxt":
+"druxt@^0.15.0, druxt@workspace:packages/druxt":
   version: 0.0.0-use.local
   resolution: "druxt@workspace:packages/druxt"
   dependencies:
@@ -6737,6 +6737,41 @@ __metadata:
   languageName: node
   linkType: hard
 
+"esbuild-android-arm64@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-android-arm64@npm:0.14.8"
+  checksum: 161e247a85ac8df2bf17548b5690b757ddb0349ef736c762864c55a7ae75a632874fa1719215280016e55abd07e96da2b05727bd36962b61f10aa022141e52e9
+  languageName: node
+  linkType: hard
+
+"esbuild-darwin-64@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-darwin-64@npm:0.14.8"
+  checksum: d09b173d2ff0d976c98616a578a0ff115da4b1c24c995c4033e7c03cbefeb8e3e4a92723cbb093e69ced4d6a874e0d338ea5f96a5c6790b813124854081bec68
+  languageName: node
+  linkType: hard
+
+"esbuild-darwin-arm64@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-darwin-arm64@npm:0.14.8"
+  checksum: 3df445eea7a91d044e52bd7481ca85f10881016249e420b6a158665f9982b3e9224629305f1476de83cdb22b354581563a17de1ff6f14d3ca5cc85a02abc91ed
+  languageName: node
+  linkType: hard
+
+"esbuild-freebsd-64@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-freebsd-64@npm:0.14.8"
+  checksum: cfd447aac9a7126da8556b12d74c15908768df886de2c7b44e7724ade13f321ab04a1a4ff8373e023987073c171dd1252bf862346641e2aaf983749e3a52c7ce
+  languageName: node
+  linkType: hard
+
+"esbuild-freebsd-arm64@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-freebsd-arm64@npm:0.14.8"
+  checksum: 43ce299f5dc7ec412923f06e864b88f69eab8a9f9c1eea594f86875f3e2189046a52d79df1349496ae210ccc1c56b75a6e7a069f8a0a2d7c6a270950def5adab
+  languageName: node
+  linkType: hard
+
 "esbuild-jest@npm:0.5.0":
   version: 0.5.0
   resolution: "esbuild-jest@npm:0.5.0"
@@ -6750,7 +6785,163 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:0.12.15, esbuild@npm:^0.12.15, esbuild@npm:^0.12.9":
+"esbuild-linux-32@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-linux-32@npm:0.14.8"
+  checksum: c26b1eeb57e9b51a3f151b8178db421f7ca493b984f902c56529d573681c031a2e81687702b6576dbaa8855f632236cf38f02985f3d36b8c0808feb7e435a0b8
+  languageName: node
+  linkType: hard
+
+"esbuild-linux-64@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-linux-64@npm:0.14.8"
+  checksum: 246ee050c881b31bb28be63c29c947ca9dafcb4ba060ef4b7dcea9d8557e2f0d1079ce9d1f23b711cd665ca05cd006876da8a03a0ca3574e37937b646f878c67
+  languageName: node
+  linkType: hard
+
+"esbuild-linux-arm64@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-linux-arm64@npm:0.14.8"
+  checksum: d164713adf48ff4c08602dcf5fe51839e9ed0b5d6c7ef3cee50cffb0edcfc8b05db72acb0e51754ac52877af8220bf15223f97f48076499bc6de4dfed65b8cc6
+  languageName: node
+  linkType: hard
+
+"esbuild-linux-arm@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-linux-arm@npm:0.14.8"
+  checksum: 9adfd139d0cd5f139f426ec08695fbb7be33c5f5aa2ca65cbabd1695ad24e0ff46069bed9460ddacbf194f6aaac1d09cfc32f5bfc9d608ddce0e9ec976d7c8f4
+  languageName: node
+  linkType: hard
+
+"esbuild-linux-mips64le@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-linux-mips64le@npm:0.14.8"
+  checksum: be9e3321e061a98e07cdc6c438646a975502dc1b53a001d1382bc53cc0363cb3812f31e1a8467a2c9c54928c5634e9ecfba7c713a532af615ad3d6530fc2813d
+  languageName: node
+  linkType: hard
+
+"esbuild-linux-ppc64le@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-linux-ppc64le@npm:0.14.8"
+  checksum: ad4a80792618749e6ac4552b14c5e4977e5de328441df0410ca867ac3881cdec5359d34b41f8aa3075b7ce5ab5d1d5fddc7a906b79cb9c31553fa5cfe79c9dea
+  languageName: node
+  linkType: hard
+
+"esbuild-linux-s390x@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-linux-s390x@npm:0.14.8"
+  checksum: c1880a4147da4be415e1b00c4ceda9b42aaddbd1961259f6f9d96b1c80b55fc79b86011866fc47f6c2759bceb6e977bc243207a39c26d2d47a8db4cdf5f39c1d
+  languageName: node
+  linkType: hard
+
+"esbuild-netbsd-64@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-netbsd-64@npm:0.14.8"
+  checksum: d220626803dcad70ce82507f7ded47ff0998672f19ed9fd2d417740d4d4d4ccd0d10d30756da7bea62b1df53246098aa59c7e8ae16d4f815809ed3323d50d19e
+  languageName: node
+  linkType: hard
+
+"esbuild-openbsd-64@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-openbsd-64@npm:0.14.8"
+  checksum: 4be20f333a56dcba19160d1606eb65acadc014dc1b1b8c873cfb94d16e1fcebbbf5bc70e9b568ad37467d3fb679300f5462ef349020ed2310b1f48129ad401d5
+  languageName: node
+  linkType: hard
+
+"esbuild-sunos-64@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-sunos-64@npm:0.14.8"
+  checksum: 68a4ac18a362e94b124bd448f2aca7abb9e6bb111337365e4c6277355c4de0d0532371757765de9891956f7b4a201b9bd6af9e856f84f93e0d977a785811d4d0
+  languageName: node
+  linkType: hard
+
+"esbuild-windows-32@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-windows-32@npm:0.14.8"
+  checksum: c9f2a5536f597bb151d1b8650927aca9f62edb81606672dd87bf228f04a3cfe8c1d57477603d1db81ae7534724d38f4ab024d15653c9009981593cbd729941c7
+  languageName: node
+  linkType: hard
+
+"esbuild-windows-64@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-windows-64@npm:0.14.8"
+  checksum: a057e8615ce8f95834ca4f38653b51c6a94ce7b106489548718dff3f803bf3b14487a2f3dd7d5f676aaa71e57c0be5485e371f4b756867e66598f10331cd4da6
+  languageName: node
+  linkType: hard
+
+"esbuild-windows-arm64@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild-windows-arm64@npm:0.14.8"
+  checksum: 0112c5907056a676ac782125fe375b6b074c31672aaf05e01331d2bc781b9daea23a005f1b78f60c3f1c373956abf6a79f6e7088b379b5694f1b46211cea8147
+  languageName: node
+  linkType: hard
+
+"esbuild@npm:0.14.8":
+  version: 0.14.8
+  resolution: "esbuild@npm:0.14.8"
+  dependencies:
+    esbuild-android-arm64: 0.14.8
+    esbuild-darwin-64: 0.14.8
+    esbuild-darwin-arm64: 0.14.8
+    esbuild-freebsd-64: 0.14.8
+    esbuild-freebsd-arm64: 0.14.8
+    esbuild-linux-32: 0.14.8
+    esbuild-linux-64: 0.14.8
+    esbuild-linux-arm: 0.14.8
+    esbuild-linux-arm64: 0.14.8
+    esbuild-linux-mips64le: 0.14.8
+    esbuild-linux-ppc64le: 0.14.8
+    esbuild-linux-s390x: 0.14.8
+    esbuild-netbsd-64: 0.14.8
+    esbuild-openbsd-64: 0.14.8
+    esbuild-sunos-64: 0.14.8
+    esbuild-windows-32: 0.14.8
+    esbuild-windows-64: 0.14.8
+    esbuild-windows-arm64: 0.14.8
+  dependenciesMeta:
+    esbuild-android-arm64:
+      optional: true
+    esbuild-darwin-64:
+      optional: true
+    esbuild-darwin-arm64:
+      optional: true
+    esbuild-freebsd-64:
+      optional: true
+    esbuild-freebsd-arm64:
+      optional: true
+    esbuild-linux-32:
+      optional: true
+    esbuild-linux-64:
+      optional: true
+    esbuild-linux-arm:
+      optional: true
+    esbuild-linux-arm64:
+      optional: true
+    esbuild-linux-mips64le:
+      optional: true
+    esbuild-linux-ppc64le:
+      optional: true
+    esbuild-linux-s390x:
+      optional: true
+    esbuild-netbsd-64:
+      optional: true
+    esbuild-openbsd-64:
+      optional: true
+    esbuild-sunos-64:
+      optional: true
+    esbuild-windows-32:
+      optional: true
+    esbuild-windows-64:
+      optional: true
+    esbuild-windows-arm64:
+      optional: true
+  bin:
+    esbuild: bin/esbuild
+  checksum: f47e90268a2230154cb092e8ae1e32f543b2930c261d8fe91953256f150b9d2fa4ec9d0929a898b1d0dbeb568d3906b504383ea21c24830c3346ba42f0802300
+  languageName: node
+  linkType: hard
+
+"esbuild@npm:^0.12.15, esbuild@npm:^0.12.9":
   version: 0.12.15
   resolution: "esbuild@npm:0.12.15"
   bin:
