@@ -5,10 +5,22 @@ module.exports = {
   moduleFileExtensions: ['js', 'json', 'vue'],
   modulePathIgnorePatterns: ['/examples/'],
   testEnvironment: 'jsdom',
-  testPathIgnorePatterns: ['/examples/'],
+  transformIgnorePatterns: ["/node_modules/(?!vue-awesome)", "examples"],
   transform: {
     '^.+\\.(js)$': 'esbuild-jest',
     '^.+\\.(mjs)$': 'esbuild-jest',
-    '^.+\\.(vue)$': '@vue/vue3-jest'
+      '^.+\\.(vue)$': '@vue/vue3-jest'
+  },
+  moduleNameMapper: {
+    '^vue$': '@vue/compat'
+  },
+  'globals': {
+    'vue-jest': {
+      compilerOptions: {
+        whitespace: 'condense'
+      }
+    }
   }
+
+
 }

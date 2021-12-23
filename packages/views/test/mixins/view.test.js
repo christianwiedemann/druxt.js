@@ -1,9 +1,6 @@
-import { createLocalVue, mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 
 import { DruxtViewsViewMixin } from '../../src'
-
-// Setup local vue instance.
-const localVue = createLocalVue()
 
 const component = {
   name: 'DruxtViewTest',
@@ -12,7 +9,7 @@ const component = {
 }
 
 test('DruxtViewsViewMixin', async () => {
-  const wrapper = mount(component, { localVue })
+  const wrapper = shallowMount(component);
   expect(wrapper.vm.value).toStrictEqual({ page: null })
 
   wrapper.vm.model = { page:  1 }

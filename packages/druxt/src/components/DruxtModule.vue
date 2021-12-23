@@ -1,6 +1,8 @@
 <script>
 import { pascalCase, splitByCase } from 'scule'
 import Vue from 'vue'
+import { h } from 'vue'
+import merge from 'lodash/fp/merge'
 
 import DruxtWrapper from './DruxtWrapper.vue'
 
@@ -14,7 +16,7 @@ import DruxtWrapper from './DruxtWrapper.vue'
  *   extends: DruxtModule,
  *   druxt: {
  *     componentOptions: () => ([['wrapper']]),
- *     propsData: (ctx) => ({
+ *     props: (ctx) => ({
  *       bar: ctx.bar,
  *       foo: ctx.foo,
  *     }),
@@ -269,8 +271,8 @@ export default {
         : {}
 
       // Pass through default scoped slot if provided.
-      if (typeof this.$scopedSlots.default === 'function') {
-        scopedSlots.default = (attrs) => this.$scopedSlots.default({
+      if (typeof this.$slots.default === 'function') {
+        scopedSlots.default = (attrs) => this.$slots.default({
           ...((this.$options.druxt || {}).propsData || (() => {}))(this),
           ...attrs
         })
@@ -325,7 +327,7 @@ export default {
     }
   },
 
-  render(h) {
+  render() {
     const self = this
 
     const wrapperData = {
@@ -335,7 +337,7 @@ export default {
     }
 
     // Return only wrapper if fetch state is still pending.
-    if (this.$fetchState.pending) {
+    if (this.$fetchState.pending && this.component.is === 'DruxtWrapper') {
       return h((this.wrapper || {}).component || 'div', wrapperData)
     }
 
@@ -344,7 +346,7 @@ export default {
     delete attrs['data-fetch-key']
 
     // Unwrap default template based component if required.
-    if ((this.$scopedSlots.default && !this.wrapper) || this.wrapper === false) {
+    if ((this.$slots.default && !this.wrapper) || this.wrapper === false) {
       this.component.is = 'DruxtWrapper'
     }
 

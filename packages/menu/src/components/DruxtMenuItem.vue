@@ -124,7 +124,7 @@ export default {
           )
         },
 
-        ...this.menu.$scopedSlots
+        ...this.menu.$slots
       }
     }
   },

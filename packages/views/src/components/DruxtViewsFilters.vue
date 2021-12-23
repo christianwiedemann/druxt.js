@@ -47,7 +47,7 @@ export default {
      *
      * @type {object}
      */
-    value: {
+    modelValue: {
       type: Object,
       default: () => ({}),
     },
@@ -96,7 +96,7 @@ export default {
           attrs: { ...attrs, ...this.$attrs },
           props: {
             filter,
-            value: this.model[filter.expose.identifier]
+            modelValue: this.model[filter.expose.identifier]
           },
           ref: filter.expose.identifier,
           on: {
@@ -108,9 +108,10 @@ export default {
       })
 
       // Build default slot.
-      scopedSlots.default = (attrs) => this.filters.map(
+      // @TODO V3:     [Vue warn]: resolveComponent can only be used in render() or setup().
+      /*scopedSlots.default = (attrs) => this.filters.map(
         (filter) => scopedSlots[filter.expose.identifier](attrs)
-      )
+      )*/
 
       return scopedSlots
     },

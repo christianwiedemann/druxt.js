@@ -16,7 +16,7 @@ const DruxtComponentMixin = {
     component: {
       is: 'DruxtWrapper',
       options: [],
-      propsData: {},
+      props: {},
     },
   }),
 
@@ -25,7 +25,7 @@ const DruxtComponentMixin = {
       type: Object,
       default: () => ({
         component: 'div',
-        propsData: {},
+        props: {},
       })
     }
   },
@@ -59,7 +59,7 @@ const DruxtComponentMixin = {
     const druxt = new DruxtClass()
     const moduleData = await druxt.getModuleData(this)
 
-    this.component.propsData = moduleData.propsData || {}
+    this.component.props = moduleData.props || {}
 
     if (!moduleData.componentOptions) {
       return

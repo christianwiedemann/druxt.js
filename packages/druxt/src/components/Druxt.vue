@@ -1,4 +1,6 @@
 <script>
+import { h } from 'vue'
+
 /**
  * Utility component for rendering Druxt modules.
  *
@@ -140,7 +142,7 @@ export default {
     },
   },
 
-  render(h) {
+  render() {
     const component = h(this.component.is, {
       props: {
         ...{ wrapper: this.inner },

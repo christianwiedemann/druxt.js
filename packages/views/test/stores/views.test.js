@@ -1,7 +1,6 @@
-import { createLocalVue } from '@vue/test-utils'
+import { createStore } from 'vuex'
 import { DruxtClient, DruxtStore } from 'druxt'
 import mockAxios from 'jest-mock-axios'
-import Vuex from 'vuex'
 
 import { DruxtViewsStore } from '../../src'
 
@@ -11,18 +10,14 @@ jest.mock('axios')
 const viewId = 'featured_articles'
 const displayId = 'page_1'
 
-// Setup local vue instance.
-const localVue = createLocalVue()
-localVue.use(Vuex)
-
-let store
+let store;
 
 describe('DruxtViewsStore', () => {
   beforeEach(() => {
     mockAxios.reset()
 
     // Setup vuex store.
-    store = new Vuex.Store()
+    store = new  createStore({});
     DruxtStore({ store })
     DruxtViewsStore({ store })
 
